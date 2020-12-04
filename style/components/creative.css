@@ -1,0 +1,58 @@
+.creative {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creative-item {
+    position: relative;
+    width: 25%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 30px 15px 50px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+}
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.creative-item i {
+    padding: 20px 0;
+}
+.item > i > svg {
+    width: 65px;
+    height: 65px;
+}
+.creative-item h4 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.creative-item p {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 20px 0 0;
+    text-align: center;
+    line-height: 22.4px;
+}
+
+.creative-item:nth-child(2n) {
+    background-image: url("../../images/bgn1.jpg");
+}
+.creative-item:nth-child(2n) .filter {
+    color: #fff;
+    background-color: rgb(17, 17, 17, 0.9);
+}
